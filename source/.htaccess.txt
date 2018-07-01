@@ -1,0 +1,23 @@
+display_errors = Off
+register_globals = On
+log_errors = On
+error_log = syslog
+implicit_flush = On
+output_buffering=4096
+
+max_execution_time = 600
+max_input_time = 600	
+memory_limit = 64M
+
+session.save_handler = files
+session.use_cookies = 1
+session.name = SISFOKOLID
+session.auto_start = 0
+session.cookie_lifetime = 0
+session.cache_limiter = nocache
+session.cache_expire = 180
+
+allow_url_fopen = On
+
+file_uploads = On
+upload_max_filesize = 10M
